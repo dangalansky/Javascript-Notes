@@ -70,7 +70,26 @@ javascript!
 	alert(“Your love score is ” + loveScore + “ %”);
                  }
 
-	•	! NOT		
+	•	! NOT	
+
+	While Loops:
+	* checks for a state; WHILE something is true
+
+while (something is true) {
+	//Do something
+}
+	
+	For Loops:
+	* used to iterate code over a fixed number of times
+
+for (i=0; i<2; i++) {
+	//Do something
+}
+	-i=0; —> start
+	-i<2; —> end
+	-i++; —> change
+
+
 
 	arrays!
 	•	var array = [ ]; 
@@ -166,6 +185,7 @@ var change = getMilk(4); —> 1
 
 
 	variable naming conventions
+
 	1.	give variables meaningful names
 	2.	assume someone else will need to read code and understand!
 	3.	no keywords (ex. var)
@@ -174,6 +194,10 @@ var change = getMilk(4); —> 1
 	6.	can only contain letters, numbers, $, and _ (no other symbols!)
 	7.	camel casing (first letter lowercase, every next word begins with uppercase letter)
 
+	DOM (Document Object Model)
+		*catalogs website into individual objects to be manipulated
+	•	onload —> when page loads…something happens
+	⁃	<body onload=“alert(‘Hello’);”>
 
 	
 
