@@ -137,7 +137,8 @@ switch (buttonInnerHTML) {
 }
 
 
-	arrays!
+	arrays
+
 	•	var array = [ ]; 
 	⁃	establish empty array
 
@@ -276,7 +277,7 @@ function respondToKey(event) {         <———— *callback function
 	⁃	must space between selectors if not within same element!
 
 	•	querySelectorAll()
-	⁃	returns array of all occurances
+	⁃	returns array of all occurrences
 
 	Text Manipulation
 
@@ -367,6 +368,43 @@ var bellBoy1 = new BellBoy(“Timmy”, 19, true, [“French”, “English”])
 bellBoy1.pickUpLuggage(); —> alert(“Luggage being moved!”)
 bellBoy1.name —> “Timmy”
 
+
+	JQuery
+*javascript library
+paste right above script line in code:
+	ex) <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	    <script src="index.js" charset="utf-8"></script>
+
+	•	jquery === $
+
+$(“h1”); —> document.querySelector(“h1”);
+
+same as… document.querySelectorAll(“h1”);
+
+
+	JQuery Methods
+
+	•	.css 
+	⁃	$(“h1”).css(“property”, “change”);
+
+		OR:
+
+	⁃	console.log($(“h1”).css(“font-size”));
+
+	•	.addClass/.removeClass—>better for separation of concerns
+
+	⁃	$(“h1”).addClass(“big-title”);
+
+	⁃	or for multiples add space
+
+	⁃	$(“h1”).addClass(“big-title small-margin”);
+
+	•	.hasClass —>returns true/false
+	⁃	ex) $(“h1”).hasClass(“big-title small-margin”); —> true
+
+	•	.text —> textContent
+
+	•	.html —>innerHTML
 
 
 
