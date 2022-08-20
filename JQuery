@@ -1,0 +1,99 @@
+JQuery
+*javascript library
+paste right above script line in code:
+	ex) <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	    <script src="index.js" charset="utf-8"></script>
+
+	•	jquery === $
+
+$(“h1”); —> document.querySelector(“h1”);
+
+same as… document.querySelectorAll(“h1”);
+
+
+	JQuery Methods
+
+	•	.css 
+	⁃	$(“h1”).css(“property”, “change”);
+
+		OR:
+
+	⁃	console.log($(“h1”).css(“font-size”));
+
+	•	.addClass/.removeClass—>better for separation of concerns
+
+	⁃	$(“h1”).addClass(“big-title”);
+
+	⁃	or for multiples add space
+
+	⁃	$(“h1”).addClass(“big-title small-margin”);
+
+	•	.hasClass —>returns true/false
+	⁃	ex) $(“h1”).hasClass(“big-title small-margin”); —> true
+
+	•	.text —> textContent
+
+	•	.html —>innerHTML
+
+	JQuery Attribute Manipulation
+	*attributes include: src, class, href etc.
+
+	•	.attr —> to receive or change
+	⁃	receive current attribute:
+	⁃	ex) $(“h1”).attr(“class”) —> “big-title margin-50”
+
+	⁃	change attribute:
+	⁃	ex) $(“h1”).attr(“class”, “sm-title”)
+
+	JQuery and eventListeners
+
+	•	.click
+	⁃	ex) $(“button”).click(function() {
+				$(“h1”).css.(“color”, “red”);
+		});
+
+	•	.keydown
+	•	⁃	ex) $(document).keydown(function(event) {
+	•			console.log(event.key);
+	•	});
+
+	•	.on —> any event!!!!
+	⁃	ex) $(“h1”).on(“mouseover”, function() {
+	⁃			$(“h1”).css.(“color”, “red”);
+
+	Adding/Removing Elements w/JQuery
+
+	•	.before/.after —>adds element before or after element specified
+	⁃	$(“h1”).before(“<button>New Button</button>”);
+
+	•	.prepend/.append—>adds element inside specified element; either directly after opening tag or before closing tag
+	⁃	$(“h1”).prepend(“<button>New Button</button>”);
+
+	•	.remove —> removes all circumstances of element as specified
+	⁃	$(“button”).remove();
+	⁃	this would remove every button, but you could be more specific!
+
+
+	Animations with JQuery
+	* https://www.w3schools.com/jquery/jquery_ref_effects.asp
+
+	•	hide()/show()
+	⁃	$(“h1”).show();
+
+	•	toggle()
+	⁃	toggles between hide and show
+
+	•	fadeIn()/fadeOut()
+	⁃	like hide/show but more subtle
+
+	•	animate
+	⁃	allows to define custom css to move slowly towards
+	⁃	ONLY rules that are defined by NUMERIC VALUE
+	⁃	must use curly braces
+	⁃	ex) $(“h1”).animate({opacity: .05});
+
+
+
+
+	
+
