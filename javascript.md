@@ -1,30 +1,30 @@
 javascript!
 
-	keywords/methods
+keywords/methods
 
-	•	var —> defines variable, stores data
-	⁃	ex) var myName = ‘Angela’
-	⁃	ex) var yourName = prompt(‘What’s your name?’)
+•	var —> defines variable, stores data
+⁃	ex) var myName = ‘Angela’
+⁃	ex) var yourName = prompt(‘What’s your name?’)
 
-	•	console.log()—for developer! prints something inside console
-	⁃	for developer to see
+•	console.log()—for developer! prints something inside console
+⁃	for developer to see
 
-	•	alert() —> creates a popup with message
-	⁃	for user to see
-		ex) alert(‘Hello World’);
+•	alert() —> creates a popup with message
+⁃	for user to see
+	ex) alert(‘Hello World’);
 
-	•	prompt() —> popup that requires user input
+•	prompt() —> popup that requires user input
 
-	•	typeof()—>returns datatype
+•	typeof()—>returns datatype
 
-	•	.length —>returns integer with number of characters in a string
-	⁃	ex) myName.length - returns(6)
+•	.length —>returns integer with number of characters in a string
+⁃	ex) myName.length - returns(6)
 
-	•	.slice(start, stop)—> does not include stop
-	⁃	ex) myName.slice(0,3) —> “Ang”
+•	.slice(start, stop)—> does not include stop
+⁃	ex) myName.slice(0,3) —> “Ang”
 
-	•	.toUpperCase()//.toLowerCase()—>when applied to string, changes to uppercase/lowercase
-	⁃	ex) myName.toUpperCase() —> ANGELA
+•	.toUpperCase()//.toLowerCase()—>when applied to string, changes to uppercase/lowercase
+⁃	ex) myName.toUpperCase() —> ANGELA
 
   •	onload —> when page loads…something happens
 	⁃	<body onload=“alert(‘Hello’);”>
@@ -367,47 +367,3 @@ var bellBoy1 = new BellBoy(“Timmy”, 19, true, [“French”, “English”])
 
 bellBoy1.pickUpLuggage(); —> alert(“Luggage being moved!”)
 bellBoy1.name —> “Timmy”
-
-
-	JQuery
-*javascript library
-paste right above script line in code:
-	ex) <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	    <script src="index.js" charset="utf-8"></script>
-
-	•	jquery === $
-
-$(“h1”); —> document.querySelector(“h1”);
-
-same as… document.querySelectorAll(“h1”);
-
-
-	JQuery Methods
-
-	•	.css 
-	⁃	$(“h1”).css(“property”, “change”);
-
-		OR:
-
-	⁃	console.log($(“h1”).css(“font-size”));
-
-	•	.addClass/.removeClass—>better for separation of concerns
-
-	⁃	$(“h1”).addClass(“big-title”);
-
-	⁃	or for multiples add space
-
-	⁃	$(“h1”).addClass(“big-title small-margin”);
-
-	•	.hasClass —>returns true/false
-	⁃	ex) $(“h1”).hasClass(“big-title small-margin”); —> true
-
-	•	.text —> textContent
-
-	•	.html —>innerHTML
-
-
-
-
-	
-
