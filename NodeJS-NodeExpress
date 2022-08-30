@@ -1,0 +1,111 @@
+Node JS
+
+	•	allows JS code to interact directly with computer, independent from browser
+	•	REPL - ReEvaluation Print Loop
+	⁃	allows users to run bite-sized amounts of code
+	⁃	to access node REPL, type: node into CLI
+	⁃	to leave, type: .exit
+	•	comes with lots of in-built modules
+
+File System Module
+	* in-built module to interact with computer files
+
+1) const fs = require(“fs”);
+
+2) fs.copyFileSync(“sourceFile”, “destinationFile”);
+
+3) in hyper, inside directory this file is contained:
+	node index.js 
+	run it!
+
+4) now destination file will be created.
+
+NPM
+ * node package manager; for external modules
+	https://www.npmjs.com/
+
+1) in hyper: npm init
+
+2) go through prompts, ignoring test comand, git, keywords etc.
+
+3) this will create a package inside current project called package.json
+
+4) to download pre-existing packages, visit website and enter package name exactly
+	ex) npm install superheroes
+
+5) inside index.js:
+
+	var superheroes = require(“superheroes”);
+
+	var mySuperheroName = superheroes.random();
+
+	console.log(mySuperheroName);
+
+	*save!
+
+6) inside hyper terminal:
+
+	node index.js
+
+Node Express
+	*if node is the screwdriver, express is the drill!
+
+Building a Server
+
+1) navigate to project folder
+
+2) type: npm install express
+
+3) inside server.js:
+	const express = require(“express”);
+		—> install express
+
+	const app = express();
+		—> initialize express
+
+	app.get(“/“, function(req, res){
+		response.send(“<h3>what we want our homepage to show<h3>”);
+	});
+		—> how do we want our server to respond when it receives a request?
+		—> req = request; rec = response; you can name it whatever!
+
+	app.listen(3000);
+		—> tells server to listen for information on port 3000 = localhost:3000
+		—> we can spruce it up with callback function to inform us it is working
+	app.listen(3000, function() {
+		console.log(“Server started on port 3000”);
+	});
+
+Nodemon!
+	sudo npm install -g nodemon
+	*monitors files for changes so you don’t have to stop and start script every time a change is made
+
+when running a server:
+	nodemon server.js
+
+
+Creating a Post
+
+<form action="/" method="post">
+	*if action is left blank, same as “/“
+      <input type="text" name="num1" placeholder="first number">
+      <button type="submit” name="submit">Calculate!</button>
+    </form>
+
+Responding to Requests
+
+1) to send entire page:
+	app.get(“/“, function(req, res) {
+		res.sendFile(__dirname + “/index.html”);
+	});
+
+*__dirname —> constant that represents working directory file path, no matter where it exists!
+
+2) to receive form data:
+	-within project: npm install body-parser
+	-within js: const bodyParser = require(“body-parser”);
+	-app.use(bodyParser.urlencoded({extended: true}));
+		- *use when trying to pass data from form, 
+		   *extended = true allows to post nested objects!
+		- other options include: bodyParser.text(), bodyParser.json() 
+
