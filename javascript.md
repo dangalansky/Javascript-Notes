@@ -1,30 +1,32 @@
 javascript!
 
-keywords/methods
+	keywords/methods
 
-•	var —> defines variable, stores data
-⁃	ex) var myName = ‘Angela’
-⁃	ex) var yourName = prompt(‘What’s your name?’)
+	•	var —> defines variable, stores data
+	⁃	ex) var myName = ‘Angela’
+	⁃	ex) var yourName = prompt(‘What’s your name?’)
 
-•	console.log()—for developer! prints something inside console
-⁃	for developer to see
+	•	console.log()—for developer! prints something inside console
+	⁃	for developer to see
 
-•	alert() —> creates a popup with message
-⁃	for user to see
-	ex) alert(‘Hello World’);
+	•	alert() —> creates a popup with message
+	⁃	for user to see
+		ex) alert(‘Hello World’);
 
-•	prompt() —> popup that requires user input
+	•	prompt() —> popup that requires user input
 
-•	typeof()—>returns datatype
+	•	typeof()—>returns datatype
 
-•	.length —>returns integer with number of characters in a string
-⁃	ex) myName.length - returns(6)
+	•	.length —>returns integer with number of characters in a string
+	⁃	ex) myName.length - returns(6)
 
-•	.slice(start, stop)—> does not include stop
-⁃	ex) myName.slice(0,3) —> “Ang”
+	•	.slice(start, stop)—> does not include stop
+	⁃	ex) myName.slice(0,3) —> “Ang”
 
-•	.toUpperCase()//.toLowerCase()—>when applied to string, changes to uppercase/lowercase
-⁃	ex) myName.toUpperCase() —> ANGELA
+	•	.toUpperCase()//.toLowerCase()—>when applied to string, changes to uppercase/lowercase
+	⁃	ex) myName.toUpperCase() —> ANGELA
+
+	•	setTimeout(ms)
 
   •	onload —> when page loads…something happens
 	⁃	<body onload=“alert(‘Hello’);”>
@@ -49,6 +51,10 @@ keywords/methods
 	•	-=, *=, /= —> all the same!!!
 
 
+	•	parseFloat() —> converts string to floating point
+
+	•	Number() —> converts string to integer
+
 	•	Math.floor() —> rounds number down to nearest integer 
 
 	•	Math.pow(base, exponent) —> for exponents
@@ -58,7 +64,7 @@ keywords/methods
 
 	•	Math.random()—> returns a 16 digit number between 0 and 0.9999999999
 	⁃	ex) to return random number between 1 and 6?
-	⁃	var n = Math.random(); —> n = n * 6; —> n = Math.floor(n) + 1;
+	⁃	
 	⁃	* +1 because it will never hit 6!!! 
 
 
@@ -161,6 +167,9 @@ switch (buttonInnerHTML) {
 
 	•	array.includes(83) —> returns Boolean
 	⁃	in this case false!!!
+
+	•	checking if value NOT in array!
+	⁃	if(!array.includes(83)) 
 
 
 
@@ -367,3 +376,4 @@ var bellBoy1 = new BellBoy(“Timmy”, 19, true, [“French”, “English”])
 
 bellBoy1.pickUpLuggage(); —> alert(“Luggage being moved!”)
 bellBoy1.name —> “Timmy”
+
