@@ -1,1 +1,31 @@
+CSS
+
+The Box Model
+
+	•	Width/Height
+	⁃	default will hold element within box
+	•	Padding
+	⁃	expands beyond width/height indicated by element size or css property
+	•	Border
+	⁃	expands beyond size of container
+	⁃	ex) border: solid 50px;
+	⁃	default 3px
+	•	Margin
+	⁃	buffer zone outside of border
+
+Display Property
+
+	•	Block
+	⁃	takes up entire width of page
+	⁃	able to respond to height and width properties
+	⁃	ex) <p>, <h1> - <h6>, <div>, <ol>, <ul>, <li>, <form>
+	•	Inline
+	⁃	only takes up width necessary for element
+	⁃	multiple elements CAN sit on same line
+	⁃	ex) <span>, <images>, <a>
+	•	Inline-Block
+	⁃	can sit on same line AND can respond to sizing
+	•	None
+	⁃	does not take up any space; as if it wasn’t there at all
+	⁃	if you want it to take up space try visibility: hidden;
 
