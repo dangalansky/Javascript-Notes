@@ -1,31 +1,50 @@
 CSS
 
+* div  —> only for structure and division of content
+	  —> purposeless without CSS
+	  —> default height = defined by contained content
+	  —> otherwise: can define height inside CSS
+
+css units
+
+px = pixels
+
+% = amount of screen
+
 The Box Model
 
 	•	Width/Height
 	⁃	default will hold element within box
+
 	•	Padding
-	⁃	expands beyond width/height indicated by element size or css property
+	⁃	increases parent box size away from child
+	⁃	thus, will also affect surrounding elements 
+
 	•	Border
 	⁃	expands beyond size of container
 	⁃	ex) border: solid 50px;
 	⁃	default 3px
+
 	•	Margin
-	⁃	buffer zone outside of border
+	⁃	space outside of element, between elements
 
-Display Property
+Outer-Display Properties
 
-	•	Block
-	⁃	takes up entire width of page
+	•	block
+	⁃	takes up entire width of screen
 	⁃	able to respond to height and width properties
 	⁃	ex) <p>, <h1> - <h6>, <div>, <ol>, <ul>, <li>, <form>
-	•	Inline
+
+	•	inline
 	⁃	only takes up width necessary for element
 	⁃	multiple elements CAN sit on same line
 	⁃	ex) <span>, <images>, <a>
-	•	Inline-Block
-	⁃	can sit on same line AND can respond to sizing
-	•	None
-	⁃	does not take up any space; as if it wasn’t there at all
-	⁃	if you want it to take up space try visibility: hidden;
 
+	•	inline-block
+	⁃	can sit on same line AND can respond to sizing
+
+	•	none
+	⁃	does not take up any space; as if it wasn’t there at all
+
+	•	visibility: hidden
+	⁃	remains invisible, still holds space
