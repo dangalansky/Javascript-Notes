@@ -6,10 +6,30 @@ CSS
 	  —> otherwise: can define height inside CSS
 
 css units
-
 px = pixels
-
 % = amount of screen
+
+Default Premises of CSS
+
+1) Content is Everything
+	
+	- height and width of content determines layout
+	- before any CSS is applied
+
+2) Order Comes from Code
+
+	- img > h1: image displayed above heading
+	- h1 > img: heading displayed above image
+
+3) Children Sit on Parents
+
+	*z -index : the 3rd dimension measured away from screen
+
+	—> think of elements as stacked boxes
+	—> children elements are more towards the viewer
+	—> therefore, away from screen
+
+4) All HTML Elements are position: static by default
 
 The Box Model
 
@@ -42,9 +62,38 @@ Outer-Display Properties
 
 	•	inline-block
 	⁃	can sit on same line AND can respond to sizing
+	⁃	automatically adds slight spacing between elements
 
 	•	none
 	⁃	does not take up any space; as if it wasn’t there at all
 
 	•	visibility: hidden
 	⁃	remains invisible, still holds space
+
+Position
+
+	•	static
+	⁃	the default position, keep to HTML flow
+
+	•	relative
+	⁃	relative to how it would sit, had it been static
+	⁃	coordinates: top, bottom, left, right
+	⁃	essentially applying a margin to that side
+	⁃	ex) left: 30px; ==> moves 30px to right
+	⁃	does not affect surrounding elements
+	⁃	will move right over them!
+
+	•	absolute
+	⁃	positions element relative to parent
+	⁃	same system of coordinates
+	⁃	but… in relation to parent
+	⁃	ex) right: 30px ==> 30px from right side of parent 
+	⁃	DOES affect surrounding elements
+	⁃	moving absolute element, takes it out of default HTML flow
+
+	•	absolute child inside relative parent
+	⁃	perfect option to fine tune page layout 
+
+	•	fixed
+	⁃	keeps element placed, regardless of scrolling
+	⁃	perfect for navbar
