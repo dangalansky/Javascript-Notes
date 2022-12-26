@@ -7,7 +7,21 @@ CSS
 
 css units
 px = pixels
-% = amount of screen
+% = amount of screen/parent
+em = 16px; relative to font size of the element
+rem = 16px; relative to font size of the root element
+vw = relative to 1% of the width of the viewport
+vh = relative to 1% of the height of the viewport
+
+shortcuts for clockwise measurements
+
+	- margin: 5%; = all sides
+
+	- margin: 5% 0; = top and bottom: 5%, left and right: 0
+
+	- margin: 0 10 0; = top: 0, left and right: 10, bottom: 0
+
+	- margin: 0 10 50 8; =  top:0, right:10, bottom:50, left: 0 
 
 Default Premises of CSS
 
@@ -97,3 +111,40 @@ Position
 	•	fixed
 	⁃	keeps element placed, regardless of scrolling
 	⁃	perfect for navbar
+
+Centering Elements
+
+	•	text-align: center;
+	⁃	for parent element of child
+
+	•	margin: auto;
+	⁃	centers element vertically or horizontally depending where you set it
+	⁃	ex) margin: 0 auto 0 auto; <— horizontally centered!
+	⁃	or… 0 auto;	
+
+Float / Clear
+*allows for text to wrap image when inside same div
+
+* clear = anti-float; use to specify an element you want to escape float
+
+	ex) clear: left;
+
+- possible values are: left, right, none, and inherit (from parent)
+
+
+Fonts
+
+	•	font-size
+	⁃	1em = 16px = 100%
+	⁃	em, % are inherited from parents
+
+			ex) body {
+					font-size: 2em;
+				}
+
+				h1 {
+					font-size: 5.63em;
+				}
+	  
+	⁃	rem = ignores inheritance 
+	⁃	px is NOT inherited
