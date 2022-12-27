@@ -1,1 +1,111 @@
+Introduction to Web Design
 
+	•	Pillars of Great Design:
+
+	⁃	color theory
+	⁃	typography
+	⁃	UI Design
+	⁃	UX Design
+
+Color Theory
+
+	red- love, energy, intensity
+
+	yellow- joy, intellect, attention
+
+	green- freshness, safety, growth
+
+	blue- stability, trust, serenity
+
+	purple- wealth, royalty, femininity 
+
+
+	combining colors
+	•	analogous- next to each other on the wheel	
+	⁃	great for navbars, body, logo and background
+	⁃	does not stand out
+	•	complimentary- opposite each other on the wheel
+	⁃	great for popping out
+	⁃	not great for text and background!
+
+Typography
+
+	•	serif
+	⁃	serious, authoritative, older
+	⁃	more modern?
+	⁃	difference between thickest and thinnest parts of each letter
+	⁃	larger difference—> more modern
+	•	sans-serif
+	⁃	sensible, simple, straightforward
+	⁃	more readable, less time to take in information 
+	⁃	legibility?
+	⁃	open shapes
+	ex)	how open is “a”, “c”
+	⁃	ample intercharacter spacing
+	⁃	unambiguous forms
+	⁃	“g” vs. “9”
+	⁃	varying proportions
+	⁃	“O” vs. “0”
+	•	2 fonts per design
+	⁃	keep similar:
+	⁃	mood
+	⁃	time era
+	⁃	contrast:
+	⁃	serif-ness
+	⁃	weights
+
+User Interface Design
+
+1) Hierarchy
+	- convey most important information first
+	* we are drawn first to big, bold, squarer things
+	
+	- established through:
+
+	•	color
+	⁃	high contrast to most important
+	•	size
+	⁃	bigger items most important
+
+2) Layout
+	- more interest by interspersing blocks of text with images
+
+	- chop content into smaller pieces 
+
+	-ideal length per line of text: 40-60 characters 
+
+3) Alignment 
+	* how you position elements, relative to each other
+
+	- ex) title and body same alignment
+
+	- less alignment points = best!!!
+
+4) White Space
+	* empty space around text or elements 
+
+	-minimalism!!!!
+
+5) Audience
+	* appeal to your audience 
+
+User Experience Design
+1) Simplicity
+	* less is more!
+
+2) Consistency
+	* in design and functionality 
+
+3) Reading Patterns
+	*F pattern
+
+	- most important things should track down left gutter
+	- spreads out in importance to the right 
+
+	*Z pattern
+	-left to right, diagonal to bottom left, diagonal to bottom right
+	-great for sparse pages, with videos
+	ex) Facebook 
+
+4) All Platform Design
+	*responsivity for tablets and phones!
