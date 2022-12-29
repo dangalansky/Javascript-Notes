@@ -132,6 +132,13 @@ Float / Clear
 - possible values are: left, right, none, and inherit (from parent)
 
 
+Z-Index
+* for ordering of divs (bottom to top)
+-higher number = closer to viewer, seems to be relative
+
+ex) z-index: 3;
+
+
 Fonts
 
 	•	font-size
@@ -148,3 +155,4 @@ Fonts
 	  
 	⁃	rem = ignores inheritance 
 	⁃	px is NOT inherited
+
