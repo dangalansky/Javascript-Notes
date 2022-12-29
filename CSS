@@ -12,6 +12,9 @@ em = 16px; relative to font size of the element
 rem = 16px; relative to font size of the root element
 vw = relative to 1% of the width of the viewport
 vh = relative to 1% of the height of the viewport
+min-content = box is size of longest word
+max-content = box sized to max width/height of content; will not wrap; will overflow
+
 
 shortcuts for clockwise measurements
 
@@ -137,6 +140,109 @@ Z-Index
 -higher number = closer to viewer, seems to be relative
 
 ex) z-index: 3;
+
+Targeting All Children of Parent:
+
+.parent  > * {
+
+}
+
+
+Target Single Element of Multi-Class Instances
+
+ex) <article class=“card> card </article>
+	 <article class=“card> card </article> <— target this element
+	 <article class=“card> card </article>
+
+	.card:nth-child(2) {
+		background: pink;
+	}
+		*note: 0 != 1; 1 = 1
+
+Flexbox
+
+1) apply display:flex to parent
+
+2) children automatically lose display status, become flex items
+
+3) flex items are each their own column of content
+
+4) flex items want to be as small as possible to remain on 1 line
+
+5) parent sets ground rules, but children have lots of control
+
+* default: column widths are equal to length of content w/o line breaks 
+
+properties of flexbox
+
+*flex-shrink : factor of shrinkage for flex items when container is too small
+
+	* ratio of shrinking, default = flex-shrink: 1
+
+	ex) flex-shrink: 0;      or.   flex-shrink: 1;
+
+*flex-grow: takes unused space of parent and distributes among items; applied to item
+
+	* ratio of growth
+
+	-  0 = default and off
+
+*flex-wrap: allows for wrapping of container if space becomes to small
+
+	- wrap or nowrap
+
+*flex-basis: best thought of as width of flex items
+
+	-default: auto (this does not allow for equal spacing)
+
+* flex: short-hand, takes 3 values (flex-grow, flex-shrink, flex-basis)
+
+	ex) flex: 1; 
+		 -equal to: {flex-grow:1; flex-shrink:1; flex-basis:0}
+
+*flex-direction: column or row; for parent
+	
+	- default = row
+
+	- children are perpendicular!
+
+		ex) flex-direction: column;
+
+				—> flex items will render horizontally (rows)
+
+*gap: adds space between flex items; applied to container
+
+*justify-content: applies to main axis (flex-direction); only works with leftover space
+
+	* can create leftover space by applying height or width to parent
+	
+		pro-tip: give “min-height”; not fixed!
+
+	-center: uses leftover space to spread equally to both sides of content
+	
+	-flex-start: default; justifies left
+
+	-flex-end: justifies right
+
+	-space-between: equally distributes leftover space between items
+
+	-space-evenly: equally distributes leftover space everywhere; including before and after 1st and last item
+
+*align-items: applies to cross-axis (child direction)
+
+		—> only applies to single item, you can specialize to fit single cases
+
+			bc: its applying to column/row with single item!
+
+	- stretch: default; all items fill to end of flexbox
+
+	- flex-start: height/width snaps to intrinsic size (block-style)
+
+	- flex-end: starting at end, height/width of elements snaps to intrinsic size
+
+	- center: centers contents inside cross-access; requires leftover space
+
+*align-self: same as align-items; used for single-instance override
 
 
 Fonts
