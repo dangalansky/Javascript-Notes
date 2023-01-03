@@ -228,7 +228,7 @@ properties of flexbox
 
 	-space-evenly: equally distributes leftover space everywhere; including before and after 1st and last item
 
-*align-items: applies to cross-axis (child direction)
+*align-items: applies to cross-axis (child direction); must be placed inside parent!
 
 		—> only applies to single item, you can specialize to fit single cases
 
@@ -243,6 +243,31 @@ properties of flexbox
 	- center: centers contents inside cross-access; requires leftover space
 
 *align-self: same as align-items; used for single-instance override
+
+Transition
+* 4 properties limit for high-performance on most browsers :
+
+	- opacity()
+		- set value 0 - 1
+
+	- scale()
+		- enter a number as percentage
+
+		 ex) transform: scale(.5); => 50%
+
+		- 2 values translates to (width, height)
+
+		ex) transform: scale(1, .5); => same width, half height 
+
+		** transform: scale (1, 0); => disappear 
+
+		
+	translate()
+
+	rotate()
+
+Responsivity
+
 
 
 Fonts
@@ -261,4 +286,7 @@ Fonts
 	  
 	⁃	rem = ignores inheritance 
 	⁃	px is NOT inherited
+
+
+
 
