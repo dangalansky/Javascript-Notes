@@ -1,4 +1,4 @@
-\CSS
+CSS
 
 * div  —> only for structure and division of content
 	  —> purposeless without CSS
@@ -244,6 +244,9 @@ properties of flexbox
 
 *align-self: same as align-items; used for single-instance override
 
+Flexbox vs. Grid
+
+
 Transition
 * 4 properties limit for high-performance on most browsers :
 
@@ -276,7 +279,58 @@ Responsivity
 	
 	-magic reset that removes all previous css styles from an element 
 
+	1) Mindset
+		
+		- layout is already responsive before CSS is written
+		- when things “break”, you wrote the code that caused this
+		
+	2) Start with global styles first
+		- typography, colors, etc…
+	
+		ex) 
+			body, h1, h2, h3, p { margin: 0;}
+	
 
+			h1, h2, h3 {line-height: 1;}
+
+			h2, h3, p {margin-bottom: 1em;}
+	
+
+			img { display:block; max-width: 100%;}
+
+		*for text to stay away from sides…
+			.container{ padding: 0 1em;}
+
+	3) Avoid fixed sizes
+
+			ex) width: 600px;
+
+					nah!!!
+
+			—> max-width: 600px; 
+
+			—> better yet max-width: 60rem;
+
+			ex) height: 60rem;
+
+					nah!!!
+	
+			—> min-height: 60rem;
+
+	4) Use @media queries to ADD COMPLEXITY
+
+		* start with mobile, use (min-width) to indicate when things need to be complex
+		
+		* add queries where breakpoints occur, keep to 2 max if possible
+
+		*40em—> common breakpoint!
+
+		* min width to consider: 320px!
+
+	5) Take advantage of modern CSS to avoid so many breakpoints
+
+			ex) clamp()
+		
 
 Fonts
 
@@ -294,4 +348,3 @@ Fonts
 	  
 	⁃	rem = ignores inheritance 
 	⁃	px is NOT inherited
-
